@@ -58,7 +58,7 @@
 							<header>
 								<h1><a href="index.html" id="logo">Hi, meet ADEDAMOLA</a></h1>
 								<hr />
-								<p>YOUR NEXT SOFTWARE ENGINEER/DATA SCIENTIST</p>
+								<p>YOUR NEXT SOFTWARE ENGINEER</p>
 							</header>
 							<footer>
 								<a href="#myProjects" class="button circled scrolly">Explore</a>
@@ -80,12 +80,32 @@
 				<div class="reel">
 
 					<article>
+						<a href="https://ai-tour-guider.streamlit.app/" class="image featured">
+						<img src="projects/city-tour.png" alt="" />
+						<header>
+							<h3><a href="https://ai-tour-guider.streamlit.app/">SMART CITY TOUR</a></h3>
+						</header>
+						<p>Intelligent Tour planning, Weighted A pathfinding*, Real-time conversational guidance</p>
+					</a>
+					</article>
+
+					<article>
+						<a href="https://weed-therapy.vercel.app/" class="image featured">
+						<img src="projects/cannabis-therapy.png" alt="" />
+						<header>
+							<h3><a href="https://weed-therapy.vercel.app/">CANNABIS THERAPY</a></h3>
+						</header>
+						<p>AI-powered digital therapeutic designed to support cannabis harm reduction</p>
+					</a>
+					</article>
+
+					<article>
 						<a href="https://1marketplace.vercel.app/marketplace" class="image featured">
 						<img src="projects/marketplace.png" alt="" />
 						<header>
 							<h3><a href="https://1marketplace.vercel.app/marketplace">MARKETPLACE</a></h3>
 						</header>
-						<p>E-COMMERCE WEBSITE WITH INTEGRATED BACKEND AND ADMIN PAGE</p>
+						<p>E-COMMERCE WEBSITE WITH STRIPE PAYMENT INTEGRATION, CART, CHECKOUT, ORDER TRACKING AND ADMIN PAGE</p>
 					</a>
 					</article>
 
@@ -95,7 +115,7 @@
 						<header>
 							<h3><a href="https://mytestimony.vercel.app/"">TESTIMONY</a></h3>
 						</header>
-						<p>A Social Network for people across different faith</p>
+						<p>Create, publish, and interact with multimedia testimonies. Real-time reactions, likes, and personalized feeds</p>
 					</a>
 					</article>
 
@@ -115,7 +135,7 @@
 						<header>
 							<h3><a href="https://mybookstory.vercel.app/">MY BOOK STORY</a></h3>
 						</header>
-						<p>A PLATFORM TO BUY AND SELL PRE-OWNED BOOKS</p>
+						<p>BUY AND SELL PRE-OWNED BOOKS. Paystack-powered payments and real-time order management</p>
 					</article>
 
 					<article>
@@ -124,7 +144,7 @@
 						<header>
 							<h3><a href="https://post-checkapp.onrender.com/">POST-CHECK APP</a></h3>
 						</header>
-						<p>Check post for grammatical error</p>
+						<p>AI powered check post for grammatical error</p>
 					</article>
 
 					<article>
@@ -279,6 +299,15 @@ So yeah, when your code “has bugs”… you’re just carrying on a proud lega
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Ensure all links inside <article> open in a new tab with safe rel attributes
+				(function(){
+					document.querySelectorAll('article a').forEach(function(a){
+						a.setAttribute('target','_blank');
+						a.setAttribute('rel','noopener noreferrer');
+					});
+				})();
+			</script>
 
 	</body>
 </html>
